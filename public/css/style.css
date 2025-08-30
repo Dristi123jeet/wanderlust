@@ -1,3 +1,21 @@
+.btn-edit {
+    background-color: #e76726 !important; /* compass orange */
+    color: #fff !important;
+    border: none;
+    transition: background 0.2s;
+}
+.btn-edit:hover {
+    background-color: #ffb380 !important;
+}
+.btn-delete {
+    background-color: #ff3333 !important; /* strong red */
+    color: #fff !important;
+    border: none;
+    transition: background 0.2s;
+}
+.btn-delete:hover {
+    background-color: #b30000 !important;
+}
 .btn-dark {
     background-color: #e76726 !important;
     border-color: #e76726 !important;
@@ -100,7 +118,19 @@ body{
     transition: all 0.3s ease-in-out;
     border-radius: 1rem !important;
 }
-.add-btn{
-    background-color:#e76726 ;
-    border: none !important;
+.show-img{
+
+    height: 30wh !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+}
+.btns{
+    display: flex;
+   
+    
+    gap: 1rem;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
 }

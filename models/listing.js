@@ -5,12 +5,13 @@ const listingSchema = new mongoose.Schema({
     } ,
     description: String,
     image: {
-        filename: { type: String },
+        filename: { type: String, default: 'default' },
         url: { 
             type: String,
-            set: (v) => v === '' ? 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQztlRxfSQBem5fBKS6Hs_bQoKrO8mm7Y9WGIVPw0olLk3nYg6UPssVFOYctGsRy2DP-MSfMGAvQCOYofnWRDs' : v
+            default: 'https://cdn.confident-group.com/wp-content/uploads/2025/01/09175739/villa-features-scaled.jpg',
+            set: (v) => v === '' ? 'https://cdn.confident-group.com/wp-content/uploads/2025/01/09175739/villa-features-scaled.jpg' : v
         }
-    }, 
+    },
     price: Number,
     location: String,
     country: String,
