@@ -1,0 +1,14 @@
+<%- layout('layouts/boilerplate') %>
+<div class="row mt-3">
+  <div class="alert alert-danger d-flex align-items-center" role="alert">
+    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+    <div>
+      <h4 class="alert-heading">Error <%= err.statusCode || 500 %></h4>
+      <p><%= err.message || "Something went wrong" %></p>
+      <hr>
+      <p class="mb-0">
+        Please go back to the <a href="/listings">listings page</a> and try again.
+      </p>
+    </div>
+  </div>
+</div>
