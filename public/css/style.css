@@ -8,7 +8,7 @@
     background-color: #ffb380 !important;
 }
 .btn-delete {
-    background-color: #ff3333 !important; /* strong red */
+    background-color: rgb(64, 58, 58) !important; /* strong red */
     color: #fff !important;
     border: none;
     transition: background 0.2s;
@@ -87,7 +87,7 @@ body{
     vertical-align: middle;
   }
 
-.card{
+.listing-card{
     border: none !important;
     margin-bottom: 1rem;
 }
@@ -133,4 +133,10 @@ body{
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+.card{
+    width: auto;
+    border: #b30000;
+    padding: auto;
+    border-radius: 5rem;
 }
